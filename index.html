@@ -9,52 +9,48 @@
     <meta name="keywords" content="登革熱警報,登革熱,病例,統計">
     <meta name="description" content="近12個月登革熱每日確定病例統計">
     <meta name="author" content="泰山網頁設計班">
+
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/css.css">
     <script src="https://kit.fontawesome.com/4e475aef38.js" crossorigin="anonymous"></script>
 
+
     <style>
-        @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
-        *{
-            margin: 0px;
-            padding:0px;
-            list-style-type: none;
-            font-family: 'Noto Sans TC', sans-serif ;
-        }
-        .side{
-            background-image: linear-gradient(-60deg, #00bee0 30%, #1d84d8  );
-        }
-        .side>h1,h4,p{
-            color:white;
-            text-align: center;
-        }
-        .container-fluid{
-            height:100vh;
-        }
-        #nav{
-            margin:0px;
-            height: 100px;
-        }
+
     </style>
 </head>
 <body>
         <div class="container-fluid">
-                <div class="row h-100">
-                        <div class="col-12 col-md-3 side h-100 ">
-                            <div class=""></div>
-                                <h1 class="mt-5 mb-5"><i class="fas fa-ad"></i>Chen Feng-Chuan</h1>
-                                <p><span style='font-size:30px;vertical-align:-12.5%'>哈囉!</span>這裡放了一些作品與小練習</p>
-                                <h4 class="my-3">Telephone</h4>
-                                <h4 class="my-3">E-mail address</h4>
+                <div class="row h-100 content">
+                        <div class="col-12 col-sm-3 pb-5 side h-100 p-0">
+                          <div class="pesnpic col-12 h-60 overflow-hidden p-0 m-0"></div>
+                                <h2 class="mt-5 mb-5" id="name">Chen Feng-Chuan</h2>
+                                <!-- <p><span style='font-size:20px'>哈囉!</span>這裡放了一些作品與小練習</p> -->
+                                <h3 class="my-3 links"><a href="https://github.com/Ourtem"><i class="fab fa-github-square"></i></a></h3>
+                                <h3 class="my-3 links"><i class="fas fa-envelope-square"></i></h3>
                         </div>
-                        <div class="col-9 bg-danger p-0">
-                            <div class="col-12 bg-primary" id='nav'>
-
+                            <div  id='mainnav' class="w-75 m-0 p-0">
+                                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                            <a class="navbar-brand" href="index.html">portfolio</a>
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                              <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                          
+                                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                              <ul class="navbar-nav mr-auto">
+                                                <li class="nav-item navlink active">
+                                                  <a class="nav-link" href="#">webs/games</span></a>
+                                                </li>
+                                                <li class="nav-item navlink">
+                                                  <a class="nav-link" href="#">PS/AI</a>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </nav>
                             </div>
+                        <div id="table" class="w-75 bg-danger">
+                          
                         </div>
-                    <div class="bg-danger w-100 ">
-                        
-                    </div>
                 </div>
         </div>
 
@@ -62,5 +58,6 @@
     </div>
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/js.js"></script>
 </body>
 </html>

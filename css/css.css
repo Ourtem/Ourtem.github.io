@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+*{
+    margin: 0px;
+    padding:0px;
+    list-style-type: none;
+    font-family: 'Noto Sans TC', sans-serif ;
+}
+.side{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: linear-gradient(-200deg, #FFDA29 70% ,  #FC9E21);
+}
+.side>h2,h3,p{
+    color:#4A4843;
+}
+#name{
+  font-weight: 900;
+}
+.container-fluid{
+    height:100vh;
+}
+.links a{
+  color:#4A4843;
+}
+.pesnpic{
+  background-image: url("../img/code2.jpg");
+  background-position: 40% 40%;
+}
+.pesnpic::before{
+  content: '';
+  position:absolute;
+  width: 0px;
+  height: 0px;
+  border-top:60px solid transparent;
+  border-right:600px solid #FFDA29;
+  bottom: 0;
+}
+#mainnav{
+  height: 56px;
+  margin: 0px;
+  padding: 0px;
+}
+#table{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom:0px;
+  right: 0px;
+  height: calc(100% - 56px);
+}
+.content{
+  position: relative;
+}
+
+
+
+@media(max-width:575px){
+
+    #mainnav{
+        order: -1;
+        min-width: 100% !important;
+    }
+    .side{
+        min-width: 100% !important;
+        margin-top: -56px;
+    }
+    #table{
+        position: relative !important;
+        min-width: 100% !important;
+        display: block;
+    }
+}
+
+@media(max-width:1178px){
+    #name{
+        font-size: 25px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+}
+
+@media(max-width:1073px){
+    #mainnav{
+        flex: 0 0 100%;
+        max-width: 50%;
+    }
+    .side{
+        flex: 0 0 100%;
+        max-width: 50%;
+    }
+    #table{
+        flex: 0 0 100%;
+        max-width: 50%;
+    }
+
+}
+
+@media(max-height:667px){
+    .pesnpic{
+        background-position: 40% -137px !important;
+      }
+}
+
