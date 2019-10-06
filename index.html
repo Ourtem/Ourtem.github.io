@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143316315-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143316315-4');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>chen.fchuan.portfolio</title>
 
-    <meta name="keywords" content="登革熱警報,登革熱,病例,統計">
-    <meta name="description" content="近12個月登革熱每日確定病例統計">
-    <meta name="author" content="泰山網頁設計班">
+    <meta name="keywords" content="Chen-Feng-chuan portfolio 陳逢權">
+    <meta name="description" content="Chen Feng-Chuan's portfolio">
+    <meta name="author" content="Chen Feng-Chuan">
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <script src="https://kit.fontawesome.com/4e475aef38.js" crossorigin="anonymous"></script>
 
 
@@ -22,42 +32,209 @@
 <body>
         <div class="container-fluid">
                 <div class="row h-100 content">
+                  <!-- sidebar -->
                         <div class="col-12 col-sm-3 pb-5 side h-100 p-0">
-                          <div class="pesnpic col-12 h-60 overflow-hidden p-0 m-0"></div>
+                          <div class="pesnpic col-12  overflow-hidden p-0 m-0"></div>
                                 <h2 class="mt-5 mb-5" id="name">Chen Feng-Chuan</h2>
-                                <!-- <p><span style='font-size:20px'>哈囉!</span>這裡放了一些作品與小練習</p> -->
-                                <h3 class="my-3 links"><a href="https://github.com/Ourtem"><i class="fab fa-github-square"></i></a></h3>
-                                <h3 class="my-3 links"><i class="fas fa-envelope-square"></i></h3>
+                                <h3 class="my-3 links wow fadeInUp"><a href="https://github.com/Ourtem" target="_blank"><i class="fab fa-github-square"></i></a></h3>
+                                <h3 class="my-3 links wow fadeInUp"><a href="mailto:chen.fchuan@gmail.com"><i class="fas fa-envelope-square"></i></a></h3>
+                                <h1 class="more" onclick="scr('#table')"><i class="fas fa-arrow-circle-down"></i></h1>
                         </div>
-                            <div  id='mainnav' class="w-75 m-0 p-0">
-                                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                                            <a class="navbar-brand" href="index.html">portfolio</a>
+                        <!-- nav -->
+                        <div  id='mainnav' class="w-75 m-0 p-0">
+                                    <nav class="navbar navbar-expand-lg navbar-dark">
+                                            <a class="navbar-brand indexTitle" href="index.html">Portfolio</a>
                                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                               <span class="navbar-toggler-icon"></span>
                                             </button>
-                                          
                                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                               <ul class="navbar-nav mr-auto">
-                                                <li class="nav-item navlink active">
-                                                  <a class="nav-link" href="#">webs/games</span></a>
+                                                <li class="nav-item navlink">
+                                                  <a class="nav-link indexTitle webSwitch" onclick="scr('#table')" href="#">Webs/Games</span></a>
                                                 </li>
                                                 <li class="nav-item navlink">
-                                                  <a class="nav-link" href="#">PS/AI</a>
+                                                  <a class="nav-link indexTitle psaiSwitch" onclick="scr('#table')" href="#">PS/AI</a>
+                                                </li>
+                                              </ul>
+                                              <ul class="navbar-nav">
+                                                <li class="nav-item navlink noticeSide">
+                                                  <span class="noticeText">
+                                                    This website is for personal use, please do not repost it, or use it publicly
+                                                  </span>
+                                                  <span class="notice">
+                                                    <i class="fas fa-exclamation"></i>
+                                                  </span>
                                                 </li>
                                               </ul>
                                             </div>
                                           </nav>
-                            </div>
-                        <div id="table" class="w-75 bg-danger">
-                          
                         </div>
+                        <div id="table" class="w-75 ">
+                          <div id="bg">
+                            <css-doodle> 
+                              :doodle {
+                                  @grid: 2/100vmax;
+                              }
+                              @shape:pentagon;
+                              animation-name: star;
+                              animation-iteration-count:infinite;
+                              animation-direction:alternate;
+                              animation-timing-function: linear;
+
+                              @nth(1){
+                                background:rgba(238,109,138,0.8);
+                                @place-cell: -30% 20%;
+                                @size: 2000px;
+                                animation-duration: 500s;
+                            }
+                              @nth(2){
+                                  background:rgba(255,218,41,0.8);
+                                  @place-cell: 80% 10%;
+                                  @size: 2000px;
+                                  animation-duration: 500s;
+                              }
+                              @nth(3){
+                                  background:rgba(0,124,183,0.8);
+                                  @place-cell: 40% 40%; 
+                                  @size: 700px;
+                                  animation-duration: 50s;
+                              }
+                                              
+                              @keyframes star {
+                                  100%{
+                                  transform:rotate(180deg);
+                                  }
+          
+                              }
+                          </css-doodle>
+                          </div>
+                          <div class="wrap">
+                            <div class="items web">
+                              <div>
+                                  <img src="./img/mos.png" alt="">
+                                  <a href="http://220.128.133.15/s1080102/term/" target="_blank"><i class="fas fa-link"></i></a>
+                              </div>
+                                <h3>登革熱警報</h3>
+                                <p>近12個月登革熱病例統計</p>
+                            </div>
+                            <div class="items web">
+                                <div>
+                                    <img src="./img/card.png" alt="">
+                                    <a href="http://220.128.133.15/s1080102/card/" target="_blank"><i class="fas fa-link"></i></a>
+                                </div>
+                                <h3>翻牌遊戲</h3>
+                                <p>使用Jquery製作翻牌遊戲</p>
+                            </div>
+                            <div class="items web">
+                                <div>
+                                    <img src="./img/shotgame.png" alt="">
+                                    <a href="http://220.128.133.15/s1080102/shotgame/" target="_blank"><i class="fas fa-link"></i></a>
+                                </div>
+                                <h3>射擊遊戲</h3>
+                                <p>使用Jquery製作射擊遊戲</p>
+                            </div>
+                            <div class="items web">
+                                <div>
+                                    <img src="./img/mouse.jpg" alt="">
+                                    <a href="http://220.128.133.15/s1080102/hamster/" target="_blank"><i class="fas fa-link"></i></a>
+                                </div>
+                                <h3>打地鼠</h3>
+                                <p>使用Javascript製作打地鼠</p>
+                            </div>
+                            <div class="items web">
+                                <div>
+                                    <img src="./img/clock.jpg" alt="">
+                                    <a href="http://220.128.133.15/s1080102/clock/" target="_blank"><i class="fas fa-link"></i></a>
+                                </div>
+                                <h3>時鐘</h3>
+                                <p>使用Javascript製作時鐘</p>
+                            </div>
+                            <div class="items web">
+                                <div>
+                                    <img src="./img/c.jpg" alt="">
+                                    <a href="http://220.128.133.15/s1080102/calculator/" target="_blank"><i class="fas fa-link"></i></a>
+                                </div>
+                                <h3>計算機</h3>
+                                <p>使用Javascript製作計算機</p>
+                            </div>
+                            <!-- psai -->
+                            <div class="items psai">
+                              <div>
+                                  <img src="./img/moslogo.jpg" alt="">
+                                  <a href="./img/moslogo.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                              </div>
+                              <h3>Logo設計</h3>
+                              <p>以蚊子為主題製作Logo</p>
+                            </div>
+                            <div class="items psai">
+                              <div>
+                                    <img src="./img/oli.gif" alt="">
+                                    <a href="./img/oli.gif" target="_blank"><i class="fas fa-search-plus"></i></a>
+                                </div>
+                                <h3>橄欖油Logo</h3>
+                                <p>練習AI的筆畫功能</p>
+                            </div>
+                            <div class="items psai">
+                                <div>
+                                    <img src="./img/allani.gif" alt="">
+                                    <a href="./img/allani.gif" target="_blank"><i class="fas fa-search-plus"></i></a>
+                                </div>
+                                <h3>30隻動物</h3>
+                                <p>練習AI的鋼筆與路徑管理員功能</p>
+                            </div>
+                            <div class="items psai">
+                                <div>
+                                    <img src="./img/repaper.jpg" alt="">
+                                    <a href="./img/repaper.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                                </div>
+                                <h3>重製海報</h3>
+                                <p>PS練習-製作羽毛筆指甲油海報</p>
+                            </div>
+                            <div class="items psai">
+                                <div>
+                                    <img src="./img/wineF.jpg" alt="">
+                                    <a href="./img/wineF.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                                </div>
+                                <h3>酒瓶</h3>
+                                <p>PS練習-製作瓶身紙條</p>
+                            </div>
+                            <div class="items psai">
+                                <div>
+                                    <img src="./img/hotpot.jpg" alt="">
+                                    <a href="./img/hotpot.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                                </div>
+                                <h3>火鍋廣告</h3>
+                                <p>PS練習-設計火鍋廣告</p>
+                            </div>
+                            <div class="items psai">
+                                <div>
+                                    <img src="./img/02.jpg" alt="">
+                                    <a href="./img/02.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                                </div>
+                                <h3>招生廣告條</h3>
+                                <p>PS練習-製作招生廣告條</p>
+                            </div>
+                            <div class="items psai">
+                                <div>
+                                    <img src="./img/paper.jpg" alt="">
+                                    <a href="./img/paper.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                                </div>
+                                <h3>海報製作</h3>
+                                <p>PS練習-製作海報</p>
+                            </div>
+                        </div>
+                      </div>
                 </div>
         </div>
-
+        <!-- <div id='picPlace'>
+            <h1><i class="far fa-times-circle"></i></h1>
+        </div> -->
 
     </div>
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="js/js.js"></script>
+    <script src="./js/css-doodle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/js.js"></script>
 </body>
 </html>
